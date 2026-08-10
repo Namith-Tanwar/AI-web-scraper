@@ -16,8 +16,10 @@ app = FastAPI(title="AI Web Scraper API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*",
-        "https://web-scraper-frontend-production.up.railway.app"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://web-scraper-frontend-production.up.railway.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
