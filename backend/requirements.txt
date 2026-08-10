@@ -1,7 +1,9 @@
 fastapi
-uvicorn
-playwright
+uvicorn[standard]
+playwright==1.47.0
 beautifulsoup4
 lxml
-langchain-ollama
 langchain-core
+langchain-openai
+python-dotenv
+
